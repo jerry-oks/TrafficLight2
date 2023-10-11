@@ -50,11 +50,12 @@ struct TrafficLightView: View {
                     .padding()
                     .background(.red)
                     .foregroundStyle(.white)
-                    .clipShape(.capsule)
+                    .clipShape(.circle)
                     .shadow(radius: 5)
                 }
             }
             .animation(.smooth(duration: 0.25), value: isWorking)
+            .frame(height: 50)
         }
         .padding()
         
